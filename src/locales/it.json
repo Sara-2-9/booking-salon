@@ -1,0 +1,29 @@
+{
+  "RootLayout": {
+    "home_link": "Home",
+    "about_link": "About",
+    "sign_in_link": "Sign in",
+    "sign_up_link": "Sign up"
+  },
+  "BaseTemplate": {
+    "made_with": "Made with"
+  },
+  "Homepage": {
+    "subtitle": "Dove la Cura dei Capelli è un'Arte",
+    "description": "Scopri l'arte della bellezza dei capelli da Salone Cristina, dove la passione per la cura dei capelli e il benessere del cliente si unisce a trattamenti personalizzati. Vivi un'esperienza di cura e stile prenotando il tuo appuntamento oggi stesso.",
+    "button_text": "Prenota un appuntamento",
+    "text": "Tutti i prodotti che vengono utilizzati in salone sono selezionati per il loro impegno verso la salute e la qualità dei capelli dei nostri clienti. Inoltre potrai trovare consigli ideali su come mantenere i tuoi capelli in ottime condizioni anche dopo aver lasciato il nostro salone."
+  },
+  "HairServices": {
+    "description": "Seleziona il servizio che desideri",
+    "service1": "Piega e styling",
+    "service2": "Colore dei capelli (Tinta/Sfumature/Colore Globale)",
+    "service3": "Taglio di capelli (Uomo/Donna/Bambino)",
+    "service4": "Permanente",
+    "service5": "Styling per eventi speciali (Matrimoni/Feste)",
+    "service6": "Trattamenti di ristrutturazione per capelli danneggiati/sfibrati"
+  },
+  "Booking": {
+    "description": "Scegli la data e l'orario preferito, indicando se desideri un appuntamento per la mattina o per il pomeriggio."
+  }
+}

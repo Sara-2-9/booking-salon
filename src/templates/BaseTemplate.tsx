@@ -17,7 +17,7 @@ const BaseTemplate = (props: {
           <div className="mx-auto">
             <header className="w-full p-3">
               <div className="flex items-center justify-between">
-                <div>
+                <div className="w-40 sm:w-auto">
                   <Link href="/">
                     <Image
                       src="/assets/images/saloneCristina.png"

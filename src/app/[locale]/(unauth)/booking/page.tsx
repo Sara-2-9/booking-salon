@@ -7,7 +7,7 @@ const Booking = () => {
 
   return (
     <div>
-      <h2 className="mb-10 p-3">{` ${t('description')} `}</h2>
+      <h2 className="mx-2 my-5 text-lg sm:text-xl lg:mx-10 lg:my-5">{` ${t('description')} `}</h2>
     </div>
   );
 };

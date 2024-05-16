@@ -17,10 +17,10 @@
   "HairServices": {
     "description": "Seleziona il servizio che desideri",
     "service1": "Piega e styling",
-    "service2": "Colore dei capelli (Tinta/Sfumature/Colore Globale)",
-    "service3": "Taglio di capelli (Uomo/Donna/Bambino)",
+    "service2": "Colore dei capelli",
+    "service3": "Taglio di capelli",
     "service4": "Permanente",
-    "service5": "Styling per eventi speciali (Matrimoni/Feste)",
+    "service5": "Styling per eventi speciali",
     "service6": "Trattamenti di ristrutturazione per capelli danneggiati/sfibrati"
   },
   "Booking": {

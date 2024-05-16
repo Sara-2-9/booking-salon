@@ -9,7 +9,7 @@ const Button = (props: IButtonProps) => {
   return (
     <Link href="/hairServices">
       <button
-        className={`m-4 h-20 w-64 rounded-md bg-gradient-to-b from-orange-300 to-orange-600 text-black shadow-sm shadow-cyan-900 hover:from-orange-400 hover:to-orange-700 ${props.className}`}
+        className={`m-4 h-20 w-64 rounded-md bg-gradient-to-b from-orange-300 to-orange-600 text-gray-200 shadow-sm shadow-orange-700 hover:from-orange-400 hover:to-orange-700 ${props.className}`}
         type="button"
       >
         {props.text}

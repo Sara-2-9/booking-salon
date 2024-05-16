@@ -9,8 +9,8 @@ const Homepage = () => {
   const t = useTranslations('Homepage');
   return (
     <div>
-      <div className="flex h-screen flex-col items-center justify-around bg-[url('/assets/images/background-image-hair.jpg')] bg-cover bg-center bg-no-repeat">
-        <h2 className="flex text-center font-serif text-6xl text-orange-500 shadow-yellow-800 drop-shadow-md">
+      <div className="flex h-screen flex-col items-center justify-around bg-[url('/assets/images/red-hair-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        <h2 className="flex text-center font-serif text-5xl text-gray-200 shadow-amber-800 drop-shadow-md lg:text-6xl">
           {t('subtitle')}
         </h2>
         <div className="flex justify-center">

@@ -12,11 +12,11 @@ const Card = (props: ICardProps) => {
     <div className="flex items-center justify-center">
       <Link href="/booking">
         <button
-          className={`size-40 rounded-md bg-gradient-to-b from-orange-200 to-orange-500 shadow-md shadow-cyan-900 hover:from-orange-300 hover:to-orange-600 ${props.className}`}
+          className={`size-28 rounded-md bg-gradient-to-b from-orange-200 to-orange-400 shadow-md shadow-orange-800 ${props.className}`}
           type="button"
         >
           <div className="flex justify-center">
-            <Image src={props.src} alt={props.alt} width={112} height={112} />
+            <Image src={props.src} alt={props.alt} width={60} height={60} />
           </div>
         </button>
       </Link>

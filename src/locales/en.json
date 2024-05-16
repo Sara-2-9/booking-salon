@@ -75,10 +75,10 @@
   "HairServices": {
     "description": "Select the service you desire",
     "service1": "Blowout and styling",
-    "service2": "Hair coloring (Single Process/Highlights/Global Color)",
-    "service3": "Haircut (Men/Women/Children)",
+    "service2": "Hair coloring",
+    "service3": "Haircut",
     "service4": "Perm",
-    "service5": "Special event styling (Weddings/Parties)",
+    "service5": "Special event styling",
     "service6": "Hair repair treatments for damaged hair"
   },
   "Booking": {

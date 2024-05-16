@@ -23,10 +23,10 @@ const Menu = (props: IMenuProps) => {
         <div className="fixed right-0 top-0 z-40 size-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
           <div className="float-right min-h-full w-[85%] bg-white px-6 pt-12 shadow-2xl">
             <menu className="flex flex-col">
-              <li className="p-3">
+              <li className="hidden p-3">
                 <Link href="/sign-in">{props.text1}</Link>
               </li>
-              <li className="p-3">
+              <li className="hidden p-3">
                 <Link href="/sign-up">{props.text2}</Link>
               </li>
               <li className="p-3">

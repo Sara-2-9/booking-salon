@@ -8,7 +8,9 @@
     "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
-    "made_with": "Made with"
+    "made_with": "Made with",
+    "description": "Note: This site is a fictional representation and does not represent a real beauty salon. All content is created for illustrative purposes.",
+    "contact": "For questions, contact moro.sara29@gmail.com"
   },
   "Index": {
     "meta_title": "Next.js Boilerplate Presentation",
@@ -68,7 +70,7 @@
   },
   "Homepage": {
     "subtitle": "Where Hair Care is an Art",
-    "description": "Discover the art of hair beauty at Salone Cristina, where the passion for hair care and the client's well-being combines with personalized treatments. Live an experience of care and style by booking your appointment today.",
+    "description": "Discover the art of hair beauty at Hair Salon, where the passion for hair care and the client's well-being combines with personalized treatments. Live an experience of care and style by booking your appointment today.",
     "button_text": "Book an appointment",
     "text": "All products used in the salon are selected for their commitment to the health and quality of our clients' hair. You will also be able to find ideal advice on how to keep your hair in excellent condition even after leaving our salon."
   },

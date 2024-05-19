@@ -6,11 +6,13 @@
     "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
-    "made_with": "Made with"
+    "made_with": "Made with",
+    "description": "Nota: Questo sito è una rappresentazione fittizia e non rappresenta un salone di bellezza reale. Tutti i contenuti sono creati a scopo illustrativo.",
+    "contact": "Per domande, contattare moro.sara29@gmail.com"
   },
   "Homepage": {
     "subtitle": "Dove la Cura dei Capelli è un'Arte",
-    "description": "Scopri l'arte della bellezza dei capelli da Salone Cristina, dove la passione per la cura dei capelli e il benessere del cliente si unisce a trattamenti personalizzati. Vivi un'esperienza di cura e stile prenotando il tuo appuntamento oggi stesso.",
+    "description": "Scopri l'arte della bellezza dei capelli da Hair Salon, dove la passione per la cura dei capelli e il benessere del cliente si unisce a trattamenti personalizzati. Vivi un'esperienza di cura e stile prenotando il tuo appuntamento oggi stesso.",
     "button_text": "Prenota un appuntamento",
     "text": "Tutti i prodotti che vengono utilizzati in salone sono selezionati per il loro impegno verso la salute e la qualità dei capelli dei nostri clienti. Inoltre potrai trovare consigli ideali su come mantenere i tuoi capelli in ottime condizioni anche dopo aver lasciato il nostro salone."
   },

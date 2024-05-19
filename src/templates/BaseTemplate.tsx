@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 // import { useTranslations } from 'next-intl';
 import { AppConfig } from '@/utils/AppConfig';
@@ -8,7 +9,7 @@ const BaseTemplate = (props: {
   rightNav?: React.ReactNode;
   children: React.ReactNode;
 }) => {
-  // const t = useTranslations('BaseTemplate');
+  const t = useTranslations('BaseTemplate');
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -17,11 +18,11 @@ const BaseTemplate = (props: {
           <div className="mx-auto">
             <header className="w-full p-3">
               <div className="flex items-center justify-between">
-                <div className="w-40 sm:w-auto">
+                <div className="w-44 sm:w-auto">
                   <Link href="/">
                     <Image
-                      src="/assets/images/saloneCristina.png"
-                      alt="salone Cristina logo"
+                      src="/assets/images/hair-salon.png"
+                      alt="Hair Salon logo"
                       width="250"
                       height="300"
                     />
@@ -40,11 +41,13 @@ const BaseTemplate = (props: {
               {props.children}
             </main>
             <footer className="p-3 py-8 text-center text-sm">
-              <div>
-                <p>Via Cà Cornaro, 110, Bassano del Grappa, Veneto, Italia</p>
-                <p>an.cri06@gmail.com</p>
+              <div className="flex flex-col justify-center">
+                <p>
+                  © {new Date().getFullYear()} {AppConfig.name}
+                </p>
+                <p>{` ${t('description')} `}</p>
+                <p>{` ${t('contact')} `}</p>
               </div>
-              © Copyright {new Date().getFullYear()} {AppConfig.name}
             </footer>
           </div>
         </div>

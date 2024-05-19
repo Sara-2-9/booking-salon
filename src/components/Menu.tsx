@@ -34,25 +34,22 @@ const Menu = (props: IMenuProps) => {
               </li>
               <li className="flex flex-row p-3">
                 <a
-                  href="https://www.instagram.com/salone_cristina_hair/"
+                  href="https://www.instagram.com"
                   target="_blank"
                   className="pr-3"
                 >
                   <Image
                     src="assets/images/icon-instagram.svg"
-                    alt="Salone Cristina icon"
+                    alt="instagram icon"
                     width={30}
                     height={30}
                     className=""
                   />
                 </a>
-                <a
-                  href="https://www.facebook.com/salone.cristina.bassano.del.grappa?locale=it_IT"
-                  target="_blank"
-                >
+                <a href="https://www.facebook.com" target="_blank">
                   <Image
                     src="assets/images//icon-facebook.svg"
-                    alt="Salone Cristina icon"
+                    alt="facebook icon"
                     width={30}
                     height={30}
                     className="mr-2"

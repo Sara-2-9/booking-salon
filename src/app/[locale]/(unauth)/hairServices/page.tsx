@@ -12,12 +12,10 @@ interface FormData {
   'bordered-checkbox': string[];
 }
 
-// Funzione per gestire il clic su un servizio
 const HairServices = () => {
   const { register, handleSubmit } = useForm<FormData>();
   const router = useRouter();
   const searchParams = useSearchParams();
-  // const [selectedServices] = useState<IServiceProps[]>([]); // Array per tenere traccia dei servizi selezionati
   const t = useTranslations('HairServices');
 
   const serviceData: IServiceProps[] = [
@@ -59,27 +57,6 @@ const HairServices = () => {
     },
   ];
 
-  // Funzione per gestire il clic su un servizio
-  // const handleServiceClick = (serviceId: number) => {};
-
-  // const handleServiceClick = (serviceId: number) => {
-  //   if (selectedServices.some((s) => s.id === serviceId)) {
-  //     setSelectedServices(selectedServices.filter((s) => s.id !== serviceId)); // Deseleziona il servizio se è già stato selezionato
-  //   } else {
-  //     const selectedService = serviceData.find((s) => s.id === serviceId);
-  //     if (selectedService) {
-  //       setSelectedServices([...selectedServices, selectedService]); // Seleziona il servizio se non è già stato selezionato
-  //     }
-  //   }
-  // };
-
-  // const navigateToBookingPage = () => {
-  //   const params = new URLSearchParams({
-  //     selectedServices: JSON.stringify(selectedServices),
-  //   });
-  //   router.push(`/booking?${params.toString()}`);
-  // };
-
   // Get a new searchParams string by merging the current
   // searchParams with a provided key/value pair
   const createQueryString = useCallback(
@@ -93,10 +70,6 @@ const HairServices = () => {
   );
 
   const mySubmitFunction = (e: FormData) => {
-    console.log(e);
-    console.log(
-      `/booking?${createQueryString('selectedServices', JSON.stringify(e['bordered-checkbox']))}`,
-    );
     router.push(
       `/booking?${createQueryString('selectedServices', JSON.stringify(e['bordered-checkbox']))}`,
     );
@@ -104,28 +77,27 @@ const HairServices = () => {
 
   return (
     <div className="flex flex-col">
-      <h2 className="mx-2 my-5 text-lg sm:text-xl lg:mx-10 lg:my-5">{` ${t('description')} `}</h2>
-      <div className="flex flex-1 flex-row p-4">
-        <form onSubmit={handleSubmit(mySubmitFunction)}>
+      <h2 className="mx-2 my-5 text-lg sm:text-xl lg:mx-10">{` ${t('description')} `}</h2>
+      <div className="mx-2 my-5 flex flex-row lg:mx-10">
+        <form onSubmit={handleSubmit(mySubmitFunction)} className="w-screen">
           {serviceData.map((service: IServiceProps, index: number) => (
-            <div
-              key={service.id}
-              className="flex w-full items-center rounded border border-orange-500"
-            >
+            <div key={service.id} className="mb-5 flex w-full items-center">
               <label
                 htmlFor={`bordered-checkbox-${index}`}
-                className="flex w-full flex-row p-5"
+                className="flex w-full flex-1 flex-row items-center justify-between rounded-md p-5 shadow-sm ring-1 ring-orange-200 has-[:checked]:bg-orange-200 has-[:checked]:text-orange-900"
               >
-                <Card src={service.image} alt={service.alt} />
-                <p className="flex max-w-2xl flex-1 select-none items-center overflow-hidden text-ellipsis whitespace-normal break-words px-5 text-base font-extralight sm:text-xl">
-                  {service.name}
-                </p>
+                <div className="flex flex-row items-center">
+                  <Card src={service.image} alt={service.alt} />
+                  <p className="flex max-w-2xl flex-1 select-none items-center overflow-hidden text-ellipsis whitespace-normal break-words px-5 text-base font-extralight sm:text-xl">
+                    {service.name}
+                  </p>
+                </div>
                 <input
                   {...register('bordered-checkbox')}
                   id={`bordered-checkbox-${index}`}
                   type="checkbox"
                   value={service.id}
-                  className="size-4 rounded"
+                  className="mr-2 size-4 appearance-none rounded"
                 />
               </label>
             </div>

@@ -88,9 +88,9 @@
     "description": "Choose your preferred date and time, indicating whether you would like an appointment for the morning or afternoon.",
     "select_day_text": "You have selected the day:",
     "select_time": "You have selected:",
-    "button_time1": "Morning",
-    "button_time2": "Afternoon",
-    "button_time": "Book",
+    "button_morning": "Morning",
+    "button_afternoon": "Afternoon",
+    "button_book": "Book",
     "form_name": "Name",
     "form_number": "Phone number",
     "selectedServicesTitle": "Selected services:"

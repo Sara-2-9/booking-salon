@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import type { DayProps } from '@/components/Calendar';
 import { Calendar } from '@/components/Calendar';
@@ -23,9 +23,27 @@ const Booking = () => {
 
   const morningText = t('button_time1');
   const afternoonText = t('button_time2');
+  const tServices = useTranslations('HairServices');
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const services = params.get('selectedServices');
+    if (services) {
+      setSelectedServices(JSON.parse(services));
+    }
+  }, []);
 
   return (
     <div>
+      <div className="mx-2 my-5 text-lg sm:text-xl lg:mx-10 lg:my-5">
+        <h3 className="font-bold">{t('selectedServicesTitle')}</h3>
+        <ul className="mb-10 ml-10 list-disc">
+          {selectedServices.map((service) => (
+            <li key={service}>{tServices(service as any)}</li>
+          ))}
+        </ul>
+      </div>
       <h2 className="mx-2 my-5 text-lg sm:text-xl lg:mx-10 lg:my-5">{` ${t('description')} `}</h2>
       <div className="h-screen p-6">
         <div className="mx-auto mb-10 flex touch-auto justify-start overflow-hidden overflow-x-scroll rounded-md bg-white px-2 py-4 shadow-md md:mx-12 md:justify-center">

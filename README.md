@@ -22,6 +22,7 @@ This project is built with a series of modern technologies to ensure a solid dev
 - 🖥️ **Monitoring as Code** with **[Checkly](https://www.checklyhq.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=next-js-boilerplate)**
 - 🎉 **Storybook** for UI component development
 - 🌐 **Multi-language (i18n)** for international support
+- 🖥️ **[React Hook Form](https://react-hook-form.com)** for performant, flexible and extensible forms with easy-to-use validation
 
 ## 🎨 Key Features
 

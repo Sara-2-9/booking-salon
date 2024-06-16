@@ -30,9 +30,9 @@
     "description": "Scegli la data e l'orario preferito, indicando se desideri un appuntamento per la mattina o per il pomeriggio.",
     "select_day_text": "Hai selezionato il giorno:",
     "select_time": "Hai selezionato:",
-    "button_time1": "Mattina",
-    "button_time2": "Pomeriggio",
-    "button_time": "Prenota",
+    "button_morning": "Mattina",
+    "button_afternoon": "Pomeriggio",
+    "button_book": "Prenota",
     "form_name": "Nome",
     "form_number": "Numero di telefono",
     "selectedServicesTitle": "Servizi selezionati:"

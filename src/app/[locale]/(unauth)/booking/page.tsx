@@ -7,6 +7,7 @@ import type { DayProps } from '@/components/Calendar';
 import { Calendar } from '@/components/Calendar';
 
 const Booking = () => {
+  const tServices = useTranslations('HairServices');
   const t = useTranslations('Booking');
   const locale = useLocale();
   const [selectedDay, setSelectedDay] = useState<DayProps | null>(null);
@@ -21,9 +22,8 @@ const Booking = () => {
     setSelectedTime(time);
   };
 
-  const morningText = t('button_time1');
-  const afternoonText = t('button_time2');
-  const tServices = useTranslations('HairServices');
+  const morningText = t('button_morning');
+  const afternoonText = t('button_afternoon');
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
 
   useEffect(() => {
@@ -67,14 +67,14 @@ const Booking = () => {
                     className={`rounded px-4 py-2 ${selectedTime === morningText ? 'bg-orange-600 font-bold text-gray-100' : 'bg-gray-200 text-black hover:bg-orange-500 hover:text-gray-100'}`}
                     onClick={() => handleTimeClick(morningText)}
                   >
-                    {` ${t('button_time1')} `}
+                    {` ${t('button_morning')} `}
                   </button>
                   <button
                     type="button"
                     className={`rounded px-4 py-2 ${selectedTime === afternoonText ? 'bg-orange-600 font-bold text-gray-100' : 'bg-gray-200 text-black hover:bg-orange-500 hover:text-gray-100'}`}
                     onClick={() => handleTimeClick(afternoonText)}
                   >
-                    {` ${t('button_time2')} `}
+                    {` ${t('button_afternoon')} `}
                   </button>
                 </div>
               </div>
@@ -128,7 +128,7 @@ const Booking = () => {
                     type="submit"
                     className="mt-2 rounded bg-orange-500 px-4 py-2 text-gray-100 hover:bg-orange-600"
                   >
-                    {` ${t('button_time')} `}
+                    {` ${t('button_book')} `}
                   </button>
                 </form>
               </div>

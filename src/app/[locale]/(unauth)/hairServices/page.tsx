@@ -13,7 +13,11 @@ interface FormData {
 }
 
 const HairServices = () => {
-  const { register, handleSubmit } = useForm<FormData>();
+  const {
+    register,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<FormData>();
   const router = useRouter();
   const searchParams = useSearchParams();
   const t = useTranslations('HairServices');
@@ -93,7 +97,9 @@ const HairServices = () => {
                   </p>
                 </div>
                 <input
-                  {...register('bordered-checkbox')}
+                  {...register('bordered-checkbox', {
+                    required: true,
+                  })}
                   id={`bordered-checkbox-${index}`}
                   type="checkbox"
                   value={service.id}
@@ -105,7 +111,8 @@ const HairServices = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="m-4 h-20 w-64 rounded-md bg-gradient-to-b from-orange-300 to-orange-600 text-gray-200 shadow-sm shadow-orange-700 hover:from-orange-400 hover:to-orange-700"
+              disabled={!isValid}
+              className="m-4 h-20 w-64 rounded-md bg-gradient-to-b from-orange-300 to-orange-600 text-gray-200 shadow-sm shadow-orange-700 hover:from-orange-400 hover:to-orange-700 disabled:pointer-events-none disabled:opacity-50"
             >
               {` ${t('nextPage')} `}
             </button>

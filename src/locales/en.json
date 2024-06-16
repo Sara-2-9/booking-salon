@@ -76,12 +76,13 @@
   },
   "HairServices": {
     "description": "Select the service you desire",
-    "service1": "Blowout and styling",
-    "service2": "Hair coloring",
-    "service3": "Haircut",
-    "service4": "Perm",
-    "service5": "Special event styling",
-    "service6": "Hair repair treatments for damaged hair"
+    "hairStyling": "Blowout and styling",
+    "hairColor": "Hair coloring",
+    "hairCut": "Haircut",
+    "hairPerm": "Perm",
+    "hairEventStyling": "Special event styling",
+    "hairTreatments": "Hair repair treatments for damaged hair",
+    "nextPage": "Next"
   },
   "Booking": {
     "description": "Choose your preferred date and time, indicating whether you would like an appointment for the morning or afternoon.",
@@ -91,6 +92,7 @@
     "button_time2": "Afternoon",
     "button_time": "Book",
     "form_name": "Name",
-    "form_number": "Phone number"
+    "form_number": "Phone number",
+    "selectedServicesTitle": "Selected services:"
   }
 }

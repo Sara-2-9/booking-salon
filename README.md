@@ -23,15 +23,17 @@ This project is built with a series of modern technologies to ensure a solid dev
 - 🎉 **Storybook** for UI component development
 - 🌐 **Multi-language (i18n)** for international support
 - 🖥️ **[React Hook Form](https://react-hook-form.com)** for performant, flexible and extensible forms with easy-to-use validation
+- 📧 **[Nodemailer](https://nodemailer.com)** for sending emails, such as booking confirmations and notifications
 
 ## 🎨 Key Features
 
 - **Appointment Booking:** Allows customers to easily book appointments online.
+- **Email Notifications:** Sends an email to the salon with the client's appointment request.
 - **Interactive Calendar:** Allows selecting the date of the appointment. Customers can then choose whether they prefer the **morning** or **afternoon** using specific buttons before submitting the booking request.
-- **Notifications and Reminders:** Sends automatic reminders for appointments via SMS.
 - **Multi-language Support:** Allows the site to be used in different languages for a wider clientele.
 
 ## ⚙️ Coming Soon 
+- **Notifications and Reminders:** Sends automatic reminders for appointments via SMS.
 - **Customer Management:** Manages customer profiles and their preferences.
 
 ## 🛠️ Setup and Installation

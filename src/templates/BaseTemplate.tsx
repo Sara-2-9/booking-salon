@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-// import { useTranslations } from 'next-intl';
 import { AppConfig } from '@/utils/AppConfig';
 
 const BaseTemplate = (props: {

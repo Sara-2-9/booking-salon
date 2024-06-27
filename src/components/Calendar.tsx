@@ -44,29 +44,38 @@ const Calendar: React.FC<CalendarProps> = ({
       {dayArray.map((day: DayProps) => {
         const isSelected = selectedDay?.id === day.id;
         return (
-          <div
+          <button
             key={day.id}
-            role="button"
             tabIndex={0}
+            type="button"
             className={`group mx-1 flex w-16 cursor-pointer justify-center rounded-md transition-all duration-300 ${day.currentDay ? 'border-2 border-orange-500 shadow-lg' : 'hover:bg-orange-500 hover:shadow-lg'} ${isSelected ? 'bg-orange-600 shadow-lg' : 'hover:bg-orange-500 hover:shadow-lg'}`}
             onClick={() => onDayClick(day)}
             onKeyDown={(event) => handleKeyDown(event, day)}
           >
-            <div className="flex items-center p-2">
-              <div className="text-center">
-                <p
-                  className={`mt-3 ${isSelected ? 'text-sm font-bold text-gray-100' : 'text-sm font-normal text-gray-900 transition-all duration-300 group-hover:font-semibold group-hover:text-gray-100'}`}
-                >
-                  {day.label}
-                </p>
-                <p
-                  className={`mt-3 ${isSelected ? 'font-bold text-gray-100' : 'text-gray-900 transition-all duration-300 group-hover:font-bold group-hover:text-gray-100'}`}
-                >
-                  {day.number}
-                </p>
+            <label key={day.id} htmlFor={`day-${day.id}`}>
+              <input
+                type="radio"
+                name="day"
+                value={day.id}
+                checked={isSelected}
+                className="hidden"
+              />
+              <div className="flex items-center p-2">
+                <div className="text-center">
+                  <p
+                    className={`mt-3 ${isSelected ? 'text-sm font-bold text-gray-100' : 'text-sm font-normal text-gray-900 transition-all duration-300 group-hover:font-semibold group-hover:text-gray-100'}`}
+                  >
+                    {day.label}
+                  </p>
+                  <p
+                    className={`mt-3 ${isSelected ? 'font-bold text-gray-100' : 'text-gray-900 transition-all duration-300 group-hover:font-bold group-hover:text-gray-100'}`}
+                  >
+                    {day.number}
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
+            </label>
+          </button>
         );
       })}
     </div>

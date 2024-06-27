@@ -18,7 +18,7 @@
   },
   "HairServices": {
     "description": "Seleziona il servizio che desideri",
-    "hairStyling": "Piega e styling",
+    "hairStyling": "Piega",
     "hairColor": "Colore dei capelli",
     "hairCut": "Taglio di capelli",
     "hairPerm": "Permanente",
@@ -27,14 +27,17 @@
     "nextPage": "Avanti"
   },
   "Booking": {
-    "description": "Scegli la data e l'orario preferito, indicando se desideri un appuntamento per la mattina o per il pomeriggio.",
+    "selectedServicesTitle": "Hai selezionato questi servizi:",
+    "description": "Scegli la data e l'orario che preferisci, indicando se desideri un appuntamento per la mattina o per il pomeriggio.",
     "select_day_text": "Hai selezionato il giorno:",
     "select_time": "Hai selezionato:",
     "button_morning": "Mattina",
     "button_afternoon": "Pomeriggio",
     "button_book": "Prenota",
     "form_name": "Nome",
-    "form_number": "Numero di telefono",
-    "selectedServicesTitle": "Servizi selezionati:"
+    "form_phone": "Telefono",
+    "form_email": "Email",
+    "error_appointment_request": "Spiacenti, si è verificato un errore durante l'invio della richiesta. Per favore riprova.",
+    "thanks_appointment_request": "Grazie {name}, la tua richiesta è stata inviata con successo. Ti contatteremo a breve per ulteriori dettagli."
   }
 }

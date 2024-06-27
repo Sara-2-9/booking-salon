@@ -76,7 +76,7 @@
   },
   "HairServices": {
     "description": "Select the service you desire",
-    "hairStyling": "Blowout and styling",
+    "hairStyling": "Styling",
     "hairColor": "Hair coloring",
     "hairCut": "Haircut",
     "hairPerm": "Perm",
@@ -85,6 +85,7 @@
     "nextPage": "Next"
   },
   "Booking": {
+    "selectedServicesTitle": "You have selected these services:",
     "description": "Choose your preferred date and time, indicating whether you would like an appointment for the morning or afternoon.",
     "select_day_text": "You have selected the day:",
     "select_time": "You have selected:",
@@ -92,7 +93,9 @@
     "button_afternoon": "Afternoon",
     "button_book": "Book",
     "form_name": "Name",
-    "form_number": "Phone number",
-    "selectedServicesTitle": "Selected services:"
+    "form_phone": "Phone",
+    "form_email": "Email",
+    "error_appointment_request": "Oops, there was an error sending your request. Please try again.",
+    "thanks_appointment_request": "Thanks {name}, your request was sent successfully. We will contact you shortly for further details."
   }
 }
